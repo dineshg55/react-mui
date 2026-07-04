@@ -5,9 +5,8 @@ function InnerWrapper({ children }) {
     <Box
       sx={{
         border: '2px solid black',
-        padding: '0 15px',
         display: 'flex',
-        flexDirection: { xs: 'column', md: 'row' }, 
+        flexDirection: { xs: 'column', md: 'row' },
         gap: '1cm',
       }}
     >
