@@ -7,7 +7,10 @@ function LeftCard() {
       <Box
         sx={{
           border: '2px solid black',
-          minHeight: '450px',
+          borderTop: 'none' ,
+          borderLeft: 'none',
+          borderRight:{ xs:'none' , md: '2px solid black' } ,
+          minHeight: { xs: '250px', sm: '400px', md: '440px' },
           overflow: 'hidden',
           position: 'relative',
         }}
@@ -32,11 +35,15 @@ function LeftCard() {
           bgcolor: 'darkcyan',
           border: '2px solid black',
           borderTop: 'none',
+          borderBottom: {xs: '2px solid black' , md: 'none'} ,
+          borderRight:{ xs:'none' , md: '2px solid black' } ,
+          borderLeft: 'none' ,
           flex: 1,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          minHeight: '90px',
+          minHeight: { xs: '50px', sm:'70px', md: '90px' },
+          fontSize: { xs: '0.85rem',sm: '1rem', md: '1rem' },
         }}
       >
         Profile Name
